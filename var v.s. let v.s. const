@@ -1,0 +1,53 @@
+/* 
+
+Question: What is the difference between var, let, and cost in Javascript
+
+*/
+
+//var:
+Either global scope or local scope;
+variables declared using var can be reassign and update;
+Hoisting mechanism for var:
+Hoisting is a JavaScript mechanism where variables and functions declare will all be move to be the top of the script/scope
+Example: 
+var a = 0;
+function create(){
+    //!!!this will produce undefined because below we are trying to create a local scope so JS will not use global scope here inside create 
+    console.log(a)
+    var a = 2;
+    //2 (local scope here)
+    console.log(a)
+}
+create()
+//0 (global scope here)
+console.log(a)
+var a = 7;
+console.log(a) //7
+
+
+
+
+//const:
+Come up after ES6(ES2015)
+Have the blocked scope like let 
+Variable declared using const could not be either updated or reassign
+Have hoist technique
+Example:
+const a =1;
+a = 7;//Uncaught TypeError: Assignment to constant variable.
+a++;//Uncaught TypeError: Assignment to constant variable.
+
+Note for const object, it is possible for us to reassign/update the property of const object, but impossible for us to reassign the whole object
+
+//let:
+Come up after ES6(ES2015)
+variable declared inside let all has block scope and it could only be used inside the scope it was declared;
+let can be updated, but can not be reassign use the let keyword in same scope;
+By using let, a variable exists only within its scope.
+Will also use the hoist technique as the var
+Example:
+ let a =1;
+ let a=2;// Produce error: test_internet_speed.html:78 Uncaught SyntaxError: Identifier 'a' has already been declared
+ //If we use var here, it will work
+ 
+ We could understand let is almost the same as var, but just an improvement of it.
