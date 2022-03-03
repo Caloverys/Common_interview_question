@@ -1,0 +1,21 @@
+/* 
+
+What is the difference between POST method and GET method when retrieve data from API?
+
+*/
+
+
+/*
+
+GET method is being when requesting data from the serever, it means we want to view something without changing it.
+POST method is always being used when we want to change/update some data
+
+In simple term:
+GET when you want to retrieve data (GET DATA).
+POST when you want to send data (POST DATA).
+
+When submitting data to server:
+ The data will be included in the url when you use GET Method, but URL lenght is limited so it should be used when there are only few data parameters.
+ The data will be included inside the http request body when we use POST method
+ 
+ /*
