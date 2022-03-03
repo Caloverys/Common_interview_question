@@ -15,4 +15,20 @@ An application programming interface (API) is a particular set of rules ('code')
 The goal of the API is to perform described services when asked in specific ways. It is being used when two or more spearate system need to work together to achieve something they can't finish alone.
 
 
-/
+//First-party API v.s. Third-party API:
+//First-party API:
+/*
+
+First-party API: 
+The First-party APIs are API that are developed internally which means they are developed in-house. These API are developed using in-house system and resources.
+Example: Fetch API && Page Visibility API in front-web development
+
+*/
+
+//Third-party API:
+/*
+
+The Third-party APIs are API that commonly used to transfer information from one server to another server. It is developed outside the user / outside the house.It is less specialized comparing to first-party API.
+Example: Google API && Weather API && Yahoo Finance API
+
+*/
